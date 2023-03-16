@@ -3,52 +3,53 @@
 
 <!-- The opening tag for the HTML document -->
 <html lang="en">
+
 <head>
     <!-- This sets the character set of the document to UTF-8 -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <!-- This sets the document to use the latest version of Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- This sets the viewport to be the width of the device and scales it accordingly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- The title of the document -->
     <title>Document</title>
 
     <!-- The link to the stylesheet used by this document -->
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
     <!-- The container for the game's end screen -->
-    <div class="cntainer">
-
+    <div class="container">
         <!-- The end screen itself -->
         <div id="end" class="flex-center flex-column">
-
             <!-- The final score of the game -->
             <h1 id="finalScore">0</h1>
 
             <!-- The form for submitting the player's name and saving their score -->
-            <form action="end-form-container" class="end">
-
+            <form class="end-form-container">
                 <!-- The instructions for entering the player's name -->
                 <h2 id="end-text">Enter your name below to save your score!</h2>
 
                 <!-- The input field for the player's name -->
-                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <input type="text" name="name" id="username" placeholder="Enter your name" />
 
                 <!-- The button for submitting the player's name and score -->
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>
+                    Save
+                </button>
             </form>
+            <!-- The button to play the game again -->
+            <a href="./quiz.html" class="btn">Play Again</a>
+
+            <!-- The button to return to the home page -->
+            <a href="/" class="btn">Go Home</a>
         </div>
-
-        <!-- The button to play the game again -->
-        <a href="/game.html" class="btn">Play Again</a>
-
-        <!-- The button to return to the home page -->
-        <a href="/" class="btn">Go Home</a>
+        <script src="./assets/end.js"></script>
     </div>
-    <script src="./assets/end.js"></script>
 </body>
+
 </html>

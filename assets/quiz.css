@@ -30,7 +30,7 @@ body {
 
 /* Style for text content in choice container */
 .choice-text {
-    padding: 10px; /* add some padding */
+    padding: 2rem; /* add some padding */
     width: 100%; /* set width to 100% */
 }
 

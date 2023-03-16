@@ -97,19 +97,12 @@ choices.forEach(choice => {
     var classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
       // Add this conditional to add the "incorrect" class to the parent element of the selected choice
-    if (classToApply === 'incorrect') {
-        selectedChoice.parentElement.classList.add('incorrect');
-    }
-
-    selectedChoice.parentElement.classList.add(classToApply);
-
-    if (classToApply === 'incorrect') {
-        var correctChoice = choices.find(choice => choice.dataset['number'] == currentQuestion.answer);
-        correctChoice.parentElement.classList.add('correct');
-    } else {
+    if (classToApply === 'correct'){
         incrementScore(SCORE_POINTS);
     }
     
+    selectedChoice.parentElement.classList.add(classToApply);
+
     setTimeout(() => {
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestions();

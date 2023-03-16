@@ -32,9 +32,9 @@ h2 {
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Horizontally center child elements */
     align-items: center; /* Vertically center child elements */
-    max-width: 60; /* Set maximum width to 60px */
+    max-width: 80rem; /* Set maximum width to 60px */
     margin: 0 auto; /* Center container horizontally using auto margin */
-    padding: 2; /* Add 2px padding to container */
+    padding: 2rem; /* Add 2px padding to container */
 }
 
 /* Use flexbox to create a column layout */
@@ -106,6 +106,10 @@ input {
 
 input::placeholder {
     color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
     width: 100%;
     outline: none;
 }
