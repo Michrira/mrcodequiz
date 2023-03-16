@@ -4,7 +4,7 @@ var progressText = document.querySelector('#progressText');
 var scoreText = document.querySelector('#score');
 var progressBarFull = document.querySelector('#progressBarFull');
 var timeLeftEl = document.querySelector('#timeLeft');
-var timeLeft = 120;
+var timeLeft = 5;
 timeLeftEl.innerHTML = timeLeft;
 
 var currentQuestion = {};
@@ -60,6 +60,11 @@ function startTimer() {
     var timer = setInterval(function(){
         timeLeft = timeLeft-1;
         timeLeftEl.innerHTML = timeLeft;
+        if (timeLeft === 0) {
+            clearInterval(timer);
+            localStorage.setItem('mostRecentScore', score);
+            return window.location.assign('./end.html');
+        }
     }, 1000);
 }
 
