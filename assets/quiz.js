@@ -3,6 +3,9 @@ var choices = Array.from(document.querySelectorAll('.choice-text'));
 var progressText = document.querySelector('#progressText');
 var scoreText = document.querySelector('#score');
 var progressBarFull = document.querySelector('#progressBarFull');
+var timeLeftEl = document.querySelector('#timeLeft');
+var timeLeft = 120;
+timeLeftEl.innerHTML = timeLeft;
 
 var currentQuestion = {};
 var acceptingAnswers = true;
@@ -52,6 +55,15 @@ var questions = [
         answer: 1
     }
 ];
+
+function startTimer() {
+    var timer = setInterval(function(){
+        timeLeft = timeLeft-1;
+        timeLeftEl.innerHTML = timeLeft;
+    }, 1000);
+}
+
+startTimer();
 
 var SCORE_POINTS = 100;
 var MAX_QUESTIONS = 5;
