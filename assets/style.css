@@ -1,0 +1,88 @@
+/* Set the background color to dark gray */
+.root {
+    background-color: #333333;
+}
+
+/* Apply some default styles to all elements on the page */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 62.5%; /* Set default font size to 10px (62.5% of 16px) */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Set default font family */
+}
+
+/* Style for level 1 headings */
+h1 {
+    font-size: 24px; /* Set font size to 54px */
+    color: #fff; /* Set text color to white */
+    margin-bottom: 5; /* Add 5px margin at bottom */
+}
+
+/* Style for level 2 headings */
+h2 {
+    font-size: 4.2; /* Set font size to 42px */
+    margin-bottom: 4; /* Add 4px margin at bottom */
+}
+
+/* Style for container element */
+.container {
+    width: 100vw; /* Set container width to 100% of viewport width */
+    height: 100vh; /* Set container height to 100% of viewport height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Horizontally center child elements */
+    align-items: center; /* Vertically center child elements */
+    max-width: 60; /* Set maximum width to 60px */
+    margin: 0 auto; /* Center container horizontally using auto margin */
+    padding: 2; /* Add 2px padding to container */
+}
+
+/* Use flexbox to create a column layout */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Use flexbox to center child elements */
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Use flexbox to horizontally center child elements */
+.justify-center {
+    justify-content: center;
+}
+
+/* Use text-align property to center text */
+.text-center {
+    text-align: center;
+}
+
+/* Hide element from view */
+.hidden {
+    display: none;
+}
+
+/* Style for buttons */
+.btn {
+    font-size: 2.4rem; /* Set font size to 24px */
+    padding: 2 0; /* Add 2px padding at top and bottom, 0 padding at left and right */
+    width: 30; /* Set button width to 30px */
+    text-align: center; /* Center button text */
+    margin-bottom: 1; /* Add 1px margin at bottom */
+    text-decoration: none; /* Remove default text decoration */
+    color: rgb(28, 26, 26); /* Set text color */
+    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%); /* Add a gradient background */
+    border-radius: 4px; /* Add rounded corners */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    cursor: pointer; /* Change mouse cursor to hand */
+    box-shadow: 0 0.4 1.4 0 rgba(0, 114, 244, 0.6); /* Add a box shadow */
+    transition: transform 150ms; /* Add a smooth transition effect */
+    transform: scale(1.03); /* Slightly scale up the button */
+}
+
+
