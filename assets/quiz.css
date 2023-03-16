@@ -70,12 +70,12 @@ body {
 
 /* Style for correct answer feedback */
 .correct {
-    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%) /* set background color gradient */
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%); /* set background color gradient */
 }
 
 /* Style for incorrect answer feedback */
 .incorrect {
-    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100% /* set background color gradient */
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%); /* set background color gradient */
 }
 
 /* Media query for smaller screens */

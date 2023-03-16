@@ -46,10 +46,10 @@ var questions = [
     {
         question: "What is the correct syntax for creating an ordered list in HTML?",
         choice1: "<ol><li>item 1</li></ol>",
-        choice2: "<ol><li>Item 1</li></ol>",
+        choice2: "<li><ol>Item 1</ol></li>",
         choice3: "<ol><item>Item 1</item></ol>",
         choice4: "<ul><li>Item 1</li></ul>",
-        answer: 2
+        answer: 1
     }
 ];
 
@@ -64,7 +64,7 @@ startGame = () => {
 };
 
 getNewQuestions = () => {
-    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         return window.location.assign('./end.html');
     }
