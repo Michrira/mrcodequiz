@@ -2,34 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures compatibility with Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Defines the viewport for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Page</title>
+    <!-- Links to the main stylesheet -->
     <link rel="stylesheet" href="./assets/style.css">
+    <!-- Links to the quiz-specific stylesheet -->
     <link rel="stylesheet" href="./assets/quiz.css">
 </head>
 <body>
     <div class="container">
+        <!-- Contains the quiz itself -->
         <div id="quiz" class="justify-center flex-column">
-        <div id="hud">
-            <div class="hud-item">
-                <p id="progressText" class="hud-prefix">
-                    Question
-                </p>
-                <div id="progressBar">
-                    <div id="progressBarFull"></div>
+            <!-- Contains the HUD (heads-up display) for the quiz -->
+            <div id="hud">
+                <!-- Displays the current question number -->
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <!-- Displays the progress bar for the quiz -->
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <!-- Displays the user's current score -->
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
                 </div>
             </div>
-            <div class="hud-item">
-                <p class="hud-prefix">
-                    Score
-                </p>
-                <hi class="hud-main-text" id="score">
-                    0
-                </hi>
+            <!-- Displays the current quiz question -->
+            <div id="question">What is the answer to this question</div>
+            <!-- Displays the answer choices for the current question -->
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
             </div>
         </div>
     </div>
-</div>
+    <!-- Links to the JavaScript file for the quiz -->
+    <script src="./assets/quiz.js"></script>
 </body>
 </html>

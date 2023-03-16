@@ -1,6 +1,6 @@
 /* Set the background color to dark gray */
-.root {
-    background-color: #333333;
+:root {
+    background-color: gray;
 }
 
 /* Apply some default styles to all elements on the page */
@@ -14,15 +14,15 @@
 
 /* Style for level 1 headings */
 h1 {
-    font-size: 24px; /* Set font size to 54px */
+    font-size: 5.4rem; /* Set font size to 54px */
     color: #fff; /* Set text color to white */
-    margin-bottom: 5; /* Add 5px margin at bottom */
+    margin-bottom: 5rem; /* Add 5px margin at bottom */
 }
 
 /* Style for level 2 headings */
 h2 {
-    font-size: 4.2; /* Set font size to 42px */
-    margin-bottom: 4; /* Add 4px margin at bottom */
+    font-size: 4.2rem; /* Set font size to 42px */
+    margin-bottom: 4rem; /* Add 4px margin at bottom */
 }
 
 /* Style for container element */
@@ -67,10 +67,10 @@ h2 {
 /* Style for buttons */
 .btn {
     font-size: 2.4rem; /* Set font size to 24px */
-    padding: 2 0; /* Add 2px padding at top and bottom, 0 padding at left and right */
-    width: 30; /* Set button width to 30px */
+    padding: 2rem 0; /* Add 2px padding at top and bottom, 0 padding at left and right */
+    width: 30rem; /* Set button width to 30px */
     text-align: center; /* Center button text */
-    margin-bottom: 1; /* Add 1px margin at bottom */
+    margin-bottom: 1rem; /* Add 1px margin at bottom */
     text-decoration: none; /* Remove default text decoration */
     color: rgb(28, 26, 26); /* Set text color */
     background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%); /* Add a gradient background */
@@ -80,7 +80,7 @@ h2 {
 /* Hover effect for buttons */
 .btn:hover {
     cursor: pointer; /* Change mouse cursor to hand */
-    box-shadow: 0 0.4 1.4 0 rgba(0, 114, 244, 0.6); /* Add a box shadow */
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 114, 244, 0.6); /* Add a box shadow */
     transition: transform 150ms; /* Add a smooth transition effect */
     transform: scale(1.03); /* Slightly scale up the button */
 }
