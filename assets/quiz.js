@@ -1,9 +1,11 @@
+// Selecting elements from the HTML document
 var question = document.querySelector('#question');
 var choices = Array.from(document.querySelectorAll('.choice-text'));
 var progressText = document.querySelector('#progressText');
 var scoreText = document.querySelector('#score');
 var progressBarFull = document.querySelector('#progressBarFull');
 var timeLeftEl = document.querySelector('#timeLeft');
+// Setting initial values
 var timeLeft = 120;
 timeLeftEl.innerHTML = timeLeft;
 
@@ -13,6 +15,7 @@ var score = 0;
 var questionCounter = 0;
 var availableQuestions = {};
 
+// Array of questions and answers
 var questions = [
     {
         question: "What does HTML stand for?",
@@ -56,6 +59,7 @@ var questions = [
     }
 ];
 
+// Function to start the timer and count down from 120 seconds
 function startTimer() {
     var timer = setInterval(function(){
         timeLeft = timeLeft-1;
@@ -68,11 +72,14 @@ function startTimer() {
     }, 1000);
 }
 
+// Call the startTimer and begin countdown
 startTimer();
 
+// Setting up the game
 var SCORE_POINTS = 100;
 var MAX_QUESTIONS = 5;
 
+// Starting the game
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -80,34 +87,40 @@ startGame = () => {
     getNewQuestions();
 };
 
+// Function to get a new question
 getNewQuestions = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         return window.location.assign('./end.html');
     }
 
+    // Increment the question counter
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
+    // Put a random question from the availableQuestions array
     var questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
+    // Update the choices text with the current question
     choices.forEach(choice => {
         var number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
 
-    availableQuestions.splice(questionIndex, 1);
+    availableQuestions.splice(questionIndex, 1); // Remove the current question to avoid repeats
 
-    acceptingAnswers = true;
+    acceptingAnswers = true; // Set acceptingAnswers to true 
 }
 
+// Add event listener for when a choice is clicked
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-    if (!acceptingAnswers) return;
+    if (!acceptingAnswers) return; // If not accepting answers, return
 
+    // Set acceptingAnswers to false to prevent multiple choices from being selected
     acceptingAnswers = false;
     var selectedChoice = e.target;
     var selectedAnswer = selectedChoice.dataset['number'];
@@ -121,8 +134,10 @@ choices.forEach(choice => {
         timeLeftEl.innerHTML = timeLeft;
     }
     
-    selectedChoice.parentElement.classList.add(classToApply);
+    selectedChoice.parentElement.classList.add(classToApply); //add appropriate class choice's parent element
 
+
+    //remove the class and get a new question
     setTimeout(() => {
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestions();
@@ -130,9 +145,11 @@ choices.forEach(choice => {
     });
 });
 
+// Function to increment the score by the given number
 incrementScore = num => {
     score +=num
     scoreText.innerText = score
 }
 
+// Starts the game
 startGame();

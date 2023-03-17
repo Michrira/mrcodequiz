@@ -14,15 +14,15 @@
 
 /* Style for level 1 headings */
 h1 {
-    font-size: 5.4rem; /* Set font size to 54px */
+    font-size: 5.4rem; /* Set font size*/
     color: #fff; /* Set text color to white */
-    margin-bottom: 5rem; /* Add 5px margin at bottom */
+    margin-bottom: 5rem; /* Add margin at bottom */
 }
 
 /* Style for level 2 headings */
 h2 {
-    font-size: 4.2rem; /* Set font size to 42px */
-    margin-bottom: 4rem; /* Add 4px margin at bottom */
+    font-size: 4.2rem; /* Set font size to */
+    margin-bottom: 4rem; /* Add margin at bottom */
 }
 
 /* Style for container element */
@@ -32,7 +32,7 @@ h2 {
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Horizontally center child elements */
     align-items: center; /* Vertically center child elements */
-    max-width: 80rem; /* Set maximum width to 60px */
+    max-width: 80rem; /* Set maximum width */
     margin: 0 auto; /* Center container horizontally using auto margin */
     padding: 2rem; /* Add 2px padding to container */
 }
@@ -66,11 +66,11 @@ h2 {
 
 /* Style for buttons */
 .btn {
-    font-size: 2.4rem; /* Set font size to 24px */
-    padding: 2rem 0; /* Add 2px padding at top and bottom, 0 padding at left and right */
-    width: 30rem; /* Set button width to 30px */
+    font-size: 2.4rem; /* Set font size */
+    padding: 2rem 0; /* Add padding at top and bottom, padding at left and right */
+    width: 30rem; /* Set button width to */
     text-align: center; /* Center button text */
-    margin-bottom: 1rem; /* Add 1px margin at bottom */
+    margin-bottom: 1rem; /* Add margin at bottom */
     text-decoration: none; /* Remove default text decoration */
     color: rgb(28, 26, 26); /* Set text color */
     background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%); /* Add a gradient background */
@@ -85,47 +85,76 @@ h2 {
     transform: scale(1.03); /* Slightly scale up the button */
 }
 
+/* This is a CSS stylesheet that styles an HTML document */
 
-/* End Page CSS here*/
 .end-form-container {
+    /* This class styles the container for the end-of-game form */
     width: 100%;
+    /* Set the width to 100% */
     display: flex;
+    /* Use the flexbox layout for positioning and alignment */
     flex-direction: column;
+    /* Set the direction of the flexbox to column */
     align-items: center;
+    /* Align the items in the center */
     max-width: 30rem;
+    /* Set a maximum width of 30rem (480px) */
 }
 
 input {
+    /* This styles all input elements */
     margin-bottom: 1rem;
+    /* Add a margin of 1rem (16px) to the bottom */
     width: 20rem;
+    /* Set the width to 20rem (320px) */
     padding: 1.5rem;
+    /* Add padding of 1.5rem (24px) */
     font-size: 1.8rem;
+    /* Set the font size to 1.8rem (28.8px) */
     border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5)
+    /* Remove the border */
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    /* Add a box shadow with a blue color */
 }
 
 input::placeholder {
+    /* This styles the placeholder text for input elements */
     color: #aaa;
+    /* Set the color to a light gray */
 }
 
 #username {
+    /* This styles the input element with an ID of "username" */
     margin-bottom: 3rem;
+    /* Add a margin of 3rem (48px) to the bottom */
     width: 100%;
+    /* Set the width to 100% */
     outline: none;
+    /* Remove the outline */
 }
 
 #end-text {
+    /* This styles the element with an ID of "end-text" */
     font-size: 2.4rem;
+    /* Set the font size to 2.4rem (38.4px) */
     color: #fff;
+    /* Set the color to white */
     text-align: center;
+    /* Center the text */
 }
 
 #saveScoreBtn {
+    /* This styles the element with an ID of "saveScoreBtn" */
     border: none;
+    /* Remove the border */
 }
 
 .fa-home {
+    /* This styles the element with a class of "fa-home" */
     margin-left: 1rem;
+    /* Add a margin of 1rem (16px) to the left */
     font-size: 2rem;
-    color: rgba(28, 26, 26)
+    /* Set the font size to 2rem (32px) */
+    color: rgba(28, 26, 26);
+    /* Set the color to a dark gray */
 }

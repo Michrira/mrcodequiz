@@ -1,12 +1,16 @@
+/* Sets body to white */
 body {
     color: #fff;
 }
 
+
+/* Styles high scores list */
 #highScoresList {
     list-style: none;
     margin-bottom: 4rem;
 }
 
+/* Sets font size and adds margin to bottom */
 .high-score { 
     font-size: 2.8rem;
     margin-bottom: 0.5rem;

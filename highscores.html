@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/highscores.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/highscores.css" />
 </head>
+
 <body>
+    <!-- The <body> element contains the content of the document that is displayed in the browser. -->
     <div class="container">
+        <!-- The <div> element is a container for other HTML elements. This <div> has a class of "container". -->
         <div id="highScores" class="flex-center flex-column">
+            <!-- This <div> has an ID of "highScores" and two classes: "flex-center" and "flex-column". -->
             <h1 id="finalScore">Leaderboard</h1>
+            <!-- The <h1> element specifies a heading. This one has an ID of "finalScore" and contains the text "Leaderboard". -->
             <ul id="highScoresList"></ul>
+            <!-- The <ul> element is an unordered list. This one has an ID of "highScoresList" and is currently empty. -->
             <a href="/" class="btn">Go Home</a>
+            <!-- The <a> element creates a hyperlink to another webpage. This one links to the homepage ("/") and has a class of "btn". -->
         </div>
     </div>
+    <!--JS script link-->
     <script src="./assets/highscores.js"></script>
 </body>
+
 </html>
