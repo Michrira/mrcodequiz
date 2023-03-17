@@ -35,5 +35,5 @@ function saveHighScore(e) {
 
     // Store the updated highScores array in local storage and redirect to the home page
     localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('/')
+    window.location.assign('./')
 }
