@@ -4,7 +4,7 @@ var progressText = document.querySelector('#progressText');
 var scoreText = document.querySelector('#score');
 var progressBarFull = document.querySelector('#progressBarFull');
 var timeLeftEl = document.querySelector('#timeLeft');
-var timeLeft = 5;
+var timeLeft = 120;
 timeLeftEl.innerHTML = timeLeft;
 
 var currentQuestion = {};
@@ -116,6 +116,9 @@ choices.forEach(choice => {
       // Add this conditional to add the "incorrect" class to the parent element of the selected choice
     if (classToApply === 'correct'){
         incrementScore(SCORE_POINTS);
+    } else {
+        timeLeft -=10; //subtract 10 seconds from the time left
+        timeLeftEl.innerHTML = timeLeft;
     }
     
     selectedChoice.parentElement.classList.add(classToApply);

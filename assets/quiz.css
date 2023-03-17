@@ -17,7 +17,7 @@ body {
 /* Add hover effect to choice container */
 .choice-container:hover {
     cursor: pointer; /* change cursor to pointer */
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5); /* add box shadow */
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(5, 18, 39, 0.5); /* add box shadow */
     transform: scale(1.02); /* scale up slightly */
     transform: transform 100ms; /* add a smooth transition */
 }
