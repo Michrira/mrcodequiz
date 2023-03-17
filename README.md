@@ -6,7 +6,7 @@ This is a quick five question coding quiz featuring a home page, a leader board 
 
 ## Description 
 
-This is my first attempt at making a quiz and I wrote the HTML, CSS and JavaScript with the help of my Discord study group. On the home page, click "start" from there you will have 2 minutes to answer 5 multiple choice questions. If the question is correct, the answer will be green. If it is incorrect, the answer will be red. In addition to being red, incorrect answers deduct 10 seconds from the 2 minute timer. Each correct answer grants 100 points for a grand total of 500 points. Once all questions are answered or the timer reaches 0, the user will be brought to the end page where they will be prompted to enter their name and save for the high score leaderboard, play again or go to the home page. 
+This is my first attempt at making a quiz and I wrote the HTML, CSS and JavaScript with the help of my Discord study group. On the home page, click "start" from there, the user will have 2 minutes to answer 5 multiple choice questions. If the question is correct, the answer will be green. If it is incorrect, the answer will be red. In addition to being red, incorrect answers deduct 10 seconds from the 2 minute timer. Each correct answer grants 100 points for a grand total of 500 points. Once all questions are answered or the timer reaches 0, the user will be brought to the end page where they will be prompted to enter their name and save for the high score leaderboard, play again or go to the home page. 
 
 (This was a homework assignment that I took on to challenge myself as I am learning to code. Through this assignment, I have furthered my understanding of JavaScript, CSS, HTML and learning how to code in general.)
 
