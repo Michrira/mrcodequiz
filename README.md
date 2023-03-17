@@ -1,7 +1,7 @@
 # mrcodequiz
 
 
-# A quic created using JavaScript, CSS & HTML
+# A quiz created using JavaScript, CSS & HTML
 This is a quick five question coding quiz featuring a home page, a leader board and 5 quiz questions related to coding.
 
 ## Description 
@@ -39,4 +39,3 @@ This is a snippet of how the webpage should look and operate
 https://michrira.github.io/mrcodequiz/
 
 https://github.com/Michrira/mrcodequiz.git
-git a
