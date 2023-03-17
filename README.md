@@ -36,7 +36,7 @@ This is a snippet of how the webpage should look and operate
 ![Screenshot 2023-03-16 175316](https://user-images.githubusercontent.com/126362926/225789548-da0b73b3-c711-4ba8-945b-acae627002d8.png)
 
 ## Deployed area link:
-https://github.com/Michrira/passwordgeneratormr.git
+https://michrira.github.io/mrcodequiz/
 
-https://michrira.github.io/passwordgeneratormr/
-
+https://github.com/Michrira/mrcodequiz.git
+git a
