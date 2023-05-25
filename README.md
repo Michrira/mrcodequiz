@@ -22,7 +22,7 @@ N/A
 
 I would like to thank the author of this video tutorial: https://www.youtube.com/watch?v=f4fB9Xg2JEY
 
-as well as my
+as well as
 
 My Discord study group!
 
