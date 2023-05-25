@@ -20,6 +20,10 @@ N/A
 
 ## Credits
 
+I would like to thank the author of this video tutorial: https://www.youtube.com/watch?v=f4fB9Xg2JEY
+
+as well as my
+
 My Discord study group!
 
 ## License
